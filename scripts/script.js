@@ -1,32 +1,4 @@
-let day = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-]
-let months = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December"
-];
-const d = new Date();
-const dayName = day[d.getDay()];
-const monthName = months[d.getMonth()];
-const year = d.getFullYear();
-const fulldate = `${d.getDate()}/${monthName}/${year}`;
-document.getElementById("currentdate").textContent = fulldate
+
 
 const link  = document.querySelector("header")
 
@@ -48,3 +20,15 @@ head.addEventListener('mouseover', () => {
     const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
     head.style.backgroundColor = rndCol;
   });
+
+  
+  const year = new Date().getFullYear();  
+  const last_updated_element = document.querySelector("#currentdate");
+  last_updated_element.innerHTML = `Last Updated: ${document.lastModified}`;
+
+
+
+let windowSize = document.querySelector('#windowSize');
+window.addEventListener('resize',() => {    
+    windowSize.innerText = `Window width: ${window.innerWidth}`;
+});

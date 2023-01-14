@@ -8,8 +8,7 @@ body{
     padding: 5px;
     font-size: 1.3rem;
 }
-header{
-    overflow: auto;
+header{    
     display: flex;  
     box-shadow: 0px 0px  30px  blue;
     border-radius: 20px;
@@ -37,4 +36,3 @@ footer{
     padding: 20px;
     margin-top: 10px;
 }
-
