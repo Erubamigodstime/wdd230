@@ -27,7 +27,11 @@ header{
     
     
 }
-
+main{
+    display: grid; 
+    grid-template-columns: 1fr;   
+   
+}
 .container1, .container2, .container3{       
     background-color:#A3B18A;    
     box-shadow: 0 0 30px #A3B18A;
