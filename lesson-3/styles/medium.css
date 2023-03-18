@@ -1,4 +1,12 @@
 @media only screen and (min-width: 32.5em){
+
+    nav ul{
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+    nav a:hover {
+		background-color:  #C2C5AA;
+        color: aquamarine;
+	}
     #table-main-content{
         display: grid;
         grid-template-columns: 1fr 1fr;

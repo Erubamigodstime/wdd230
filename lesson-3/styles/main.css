@@ -18,85 +18,62 @@
 
 }
 body{
+    
     width:80%;
     margin: 0 auto;
     background-color: #C2C5AA;
-    /**background-color: white;
-    border: black solid 3px;**/
-}
-.content-1{
-    display: grid;
-    grid-template-columns: repeat(5 1fr);
-    grid-template-rows: repeat(5  100px);
     
-    
-}
-header{
-    grid-column: 1/5;
-    grid-row: 1/1;
-    background-color: #333D29;
 }
 
-.section-1{
-    grid-column: 1/5;
-    grid-row: 1/5;
-    z-index: -1;
-    position: relative; 
-    
-}
-.section-1 img{
+
+.header-content img{
     width: 100%;
 }
 
 .logo{
-    float: left;
-    
-    
-}
-.logo img{
-    width: 70px;
-}
-nav{    
     display: flex;
     flex-direction: row;
-    justify-content: space-around;   
     
     
     
 }
+
+.logo img{
+    width: 300px;
+}
+nav ul{
+    padding: 40px;
+    background-color:#333D29;
+    margin-bottom: 5px;
+
+    
+}
+
 nav ul li{
     list-style-type: none;
-    margin-top: 20px;   
+    
+    
     
 }
-nav ul li a {
+nav ul li a{
     text-decoration: none;
-    color: #C2C5AA;    
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-family: 'BIZ UDPMincho', 'Playfair Display';
+    display: block;
+	color:  #C2C5AA;
+	text-align: center;
+	padding: 0.75rem;
+	font-family: 'BIZ UDPMincho', 'Playfair Display';
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-      
-
-}
-
-nav ul li a:hover {
-    background-color:#936639 ;
-    font-size: 20px;
-    padding: 15px;
-
 }
 
 
-#nero-box{
-    grid-column: 1 / 6;
-    grid-row: 1/3;
-    z-index: -1;
-    position: relative;
-    width: 100%;
-    
 
-}
+
+
 main{
     background-color:#B6AD90;
     margin-top: 10px;
@@ -131,8 +108,7 @@ footer{
 
 
 #table-main-content{
-    /***display: grid;
-    grid-template-columns: 1fr 1fr 1fr;***/
+   
     margin-top: 20px;
     grid-gap: 20px;
     margin-bottom: 10px;
@@ -198,9 +174,6 @@ table{
 }
 
 
-table th{
-    color: #582F0E;
-}
 
 
 
@@ -208,18 +181,22 @@ table th{
 /********** Colour Scheme page  *************/
 
 
-#pallete{
+#pallete {     
     width: 80%;
     margin: 0 auto;
-    /**margin-left: 100px;
-    margin-right: 100px; **/   
-      
 }
-      
 .ts{
-   margin-left: 200px;
-   margin-right: 200px;
+    width: 80%;
+    margin: 0 auto;
 }
+
+#pallete > img{
+    width: 100%;
+}
+#pallete > table{
+    width: 100%;
+} 
+
 .color > th{
     background-color: black;
 }
@@ -292,22 +269,26 @@ table th{
     
 }
 
+/* Typography page */
 
-/********** Colour Scheme page  *************/
-
-.typo-table{
-    width: 70%;
-    margin: 0 auto;
+#typo-table, th, td {
+    border: 1px solid;
+    padding: 0.75rem;
 }
-.tb{
-    border: 2PX solid black;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    
-}
-.typo-table,.element,.font,.size,.text-color {
-    color: #C2C5AA;
+ .col1{
     background-color: #582F0E;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
 }
+.rows1:hover {background-color: #B6AD90;}
+
+
+.typo-content{
+    overflow-x:auto;
+}
+.sent{
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #582F0E;
+    padding: 0.4rem;
+}
+

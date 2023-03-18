@@ -1,4 +1,14 @@
 @media only screen and (min-width: 60em){
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    nav a:hover {
+		background-color:  #936639;
+        color: #333D29;
+	}
     #table-main-content{
         display: flex;
         flex-direction: row;
