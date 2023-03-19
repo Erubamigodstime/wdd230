@@ -283,8 +283,17 @@ table{
 
 
 .typo-content{
+    max-width: 100%;
     overflow-x:auto;
 }
+.ts{
+    overflow-x:auto;
+    max-width: 100%;
+}
+table{
+    max-width: 100%;
+}
+
 .sent{
     margin-bottom: 10px;
     text-align: center;
