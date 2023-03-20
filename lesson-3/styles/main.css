@@ -24,7 +24,9 @@ body{
     background-color: #C2C5AA;
     
 }
-
+header{
+    position: fixed;
+}
 
 .header-content img{
     width: 100%;
@@ -299,5 +301,6 @@ table{
     text-align: center;
     background-color: #582F0E;
     padding: 0.4rem;
+    display: ;
 }
 
