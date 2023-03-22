@@ -178,25 +178,7 @@ footer{
     padding: 20px;
     text-align: center;
 }
-table{
-    text-align: left;
     
-}
-th, td{
-    margin-right: 20px;
     
-}
-.tbl{
-    margin-right: 30px;
-    padding: 10px;
-}
-hr{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-.table-content{
-    display: flex;
-    flex-direction: column;
-    
-}
+
