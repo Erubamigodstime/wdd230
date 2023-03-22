@@ -174,11 +174,30 @@ nav ul.open{
 
 
 footer{
+    align-items: center;
     background-color:#936639;
     padding: 20px;
     text-align: center;
 }
-    
-    
-
+.table-content{    
+    display: grid;
+    grid-template-columns: 1fr;   
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "atn"
+                         "btn"
+                         "ctn";
+}
+.atn{
+    grid-area: atn;
+}
+.btn{
+    grid-area: btn;
+} 
+.ctn{
+    grid-area: ctn;
+}   
+     
+a{
+    color: black;
+}
 

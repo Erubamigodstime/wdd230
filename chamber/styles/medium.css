@@ -73,9 +73,27 @@
        
            
     }
+    .table-content{    
+        display: grid; 
+        grid-template-columns: 1fr;   
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "atn"
+                             "btn" 
+                             "ctn";
+                            
+    }
+    .atn{
+        grid-area: atn;
+    }
+    .btn{
+        grid-area: btn;
+    } 
+    .ctn{
+        grid-area: ctn;
+    }   
     
 }
-.table-content{
-    display: grid;
-    grid-template-columns: 1fr  3fr 2fr;
-}
+
+
+
+   
