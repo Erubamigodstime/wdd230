@@ -1,34 +1,18 @@
+const  options = {dateStyle: "full"};
+document.getElementById("currentdate").textContent = new Date().toLocaleDateString('en-US',options)
+
+const  opts = {dateStyle: "full"};
+document.getElementById("date").textContent = new Date().toLocaleDateString('en-US',opts)
+
+function toggleMenu() {
+    document.getElementById("navLink").classList.toggle("open");
+    document.getElementById("hamburger").classList.toggle("open");
 
 
-const link  = document.querySelector("header")
-
-function random(number) {
-    return Math.floor(Math.random() * (number+1));
+    
 }
 
-link.addEventListener('mouseover', () => {
-    const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-    link.style.backgroundColor = rndCol;
-  });
+const button = document.getElementById('hamburger');
+button.onclick = toggleMenu;
 
-const head = document.querySelector("footer")
-function random(number) {
-    return Math.floor(Math.random() * (number+1));
-}
-
-head.addEventListener('mouseover', () => {
-    const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-    head.style.backgroundColor = rndCol;
-  });
-
-  
-  const year = new Date().getFullYear();  
-  const last_updated_element = document.querySelector("#currentdate");
-  last_updated_element.innerHTML = `Last Updated: ${document.lastModified}`;
-
-
-
-let windowSize = document.querySelector('#windowSize');
-window.addEventListener('resize',() => {    
-    windowSize.innerText = `Window width: ${window.innerWidth}`;
-});
+console.log("it is working")
