@@ -15,21 +15,8 @@ function toggleMenu() {
 const button = document.getElementById('hamburger');
 button.onclick = toggleMenu;
 
-console.log("it is working")
 
-function getDate(){
-	let now = new Date();
-	let today = new Intl.DateTimeFormat("en-UK", {
-		dateStyle: "full"
-	}).format(now);
-	document.getElementsByClassName("show-date")[0].innerHTML= today;
-}
 
-function toggleMenu(){
-	document.getElementsByClassName("links")[0].classList.toggle("responsive");
-}
-
-const body = document.body
 function getEvent(){
 	let now = new Date();
 	const day = now.getDay()
