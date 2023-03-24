@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;     
     font-family: 'BIZ UDPMincho', 'Playfair Display','Roboto Condensed', serif;
+    
 
 }
 
@@ -17,17 +18,22 @@
 
 }
 body{
+    max-width: 100%;
     width: 98%;
     margin: 0 auto;
     
 }
 header,main{
     background-color:  #C2C5AA;
+    
+    
+}
+header{
     width: 100%;
 }
-
 main{
     width: fit-content;
+    
 }
 .logo-content{
     display: flex;
@@ -42,6 +48,7 @@ main{
 
 nav{
     background-color:#936639;
+    width: 100%;
 }
 
 nav ul{
