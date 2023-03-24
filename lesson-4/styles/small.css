@@ -452,5 +452,20 @@ p a{
     background-color: burlywood;
 }
 
-
+.main-image a{
+    bottom: 65px;
+    left: 43%;
+    position: absolute;
+    padding: 9px;
+    width: fit-content;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #414833;
+    text-decoration: none;
+}
+.main-image a:hover{
+    background-color:burlywood ;
+}
  
