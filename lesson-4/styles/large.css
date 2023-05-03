@@ -8,11 +8,31 @@
     .main-content{
         display: grid;       
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 450px 450px 600px;
+        grid-template-rows: 0.5fr   1fr;
         grid-template-areas: "Event main-image spotlight"
                              "Weather main-image spotlight"
                              "join new-release spotlight";
-        grid-gap: 5px;
+        grid-gap: 10px;
+    }
+    figure{      
+        max-width: 100%;     
+    }
+    .patners{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+   
+    figure img{
+        max-height: 100%;     
+        max-width: 100%;
+       
+    }
+    
+    picture{
+        min-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        max-width: 100%;
     }
     .Event{
         grid-area: Event;
@@ -29,6 +49,9 @@
     }
     .new-release{
         grid-area: new-release;
+    }
+    .new-release p, h3{        
+        overflow: hidden;
     }
     .spotlight{
         grid-area: spotlight;         

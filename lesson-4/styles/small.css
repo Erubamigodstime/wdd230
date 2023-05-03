@@ -18,18 +18,22 @@
 
 }
 body{
-    max-width: 100%;
-    width: 98%;
+    
+    max-width: 100%;   
     margin: 0 auto;
     
 }
+
 header,main{
     background-color:  #C2C5AA;
     
     
 }
 header{
-    width: 100%;
+   min-width: 370px; 
+}
+.new-date{
+    min-width: 370px;
 }
 main{
     width: fit-content;
@@ -62,9 +66,7 @@ nav button{
     border: none;
     font-size: 2rem;
 }
-footer{
-    max-width: 100%;
-}
+
 nav ul li a{
     display: block;
     padding: .8rem 2vw;
@@ -74,8 +76,10 @@ nav ul li a{
     border-top: 2px dotted black;
     
 }
+
 nav ul li:hover{
     background-color: burlywood;
+    cursor: pointer;
 }
 nav ul{
     display: none;
@@ -122,7 +126,7 @@ nav ul.open{
 }
 .main-content{
     display: grid;
-    grid-template-rows: 700px 700px 700px  700px 800px 1500px;
+    grid-template-rows: 363px 500px 550px  500px 800px 1500px;
     grid-template-areas: "main-image"
                          "Event"
                          "join"
@@ -132,10 +136,16 @@ nav ul.open{
     
 
 }
+
+picture{
+    display: inline-flex;
+    max-height: 100%;
+}
+
 .Event{
     grid-area: Event;
     text-align: left;   
-    border: black solid 2px;
+    /* border: black solid 2px; */
     
     
     
@@ -143,7 +153,7 @@ nav ul.open{
 .main-image{
     grid-area: main-image;
     text-align: left;    
-    border: black solid 2px;
+    /* border: black solid 2px; */
     position: relative; 
 }
 
@@ -158,25 +168,27 @@ nav ul.open{
 .Weather{
     grid-area:Weather;
     text-align: left;    
-    border: black solid 2px;
+    /* border: black solid 2px; */
      
 }
 .join{    
     grid-area:join;        
-    border: black solid 2px;
+    /* border: black solid 2px; */
     
      
 }
 .new-release{
     grid-area: new-release;
     text-align: left;    
-    border: black solid 2px; 
+    /* border: black solid 2px;  */
     
 }
+.new-release p, h3{
+    margin-left: 10px;
+}
 .spotlight{
-    grid-area:spotlight;
-    /* text-align: left;     */
-    border: black solid 2px;    
+    grid-area:spotlight;    
+    /* border: black solid 2px;     */
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows:1fr 1fr;
@@ -188,14 +200,14 @@ nav ul.open{
 }
  
 .spotlight1{
-    border: black solid 1px;
+    /* border: black solid 1px; */
     grid-area: spotlight1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .spotlight2{
-    border: black solid 1px;
+    /* border: black solid 1px; */
     grid-area: spotlight2;
     display: flex;
     flex-direction: column;
@@ -205,6 +217,7 @@ nav ul.open{
 
 
 footer{
+    min-width: 370px;
     align-items: center;
     background-color:#936639;
     padding: 20px;
@@ -218,6 +231,7 @@ footer{
                          "btn"
                          "ctn";
 }
+
 .atn{
     grid-area: atn;
 }
@@ -230,6 +244,7 @@ footer{
      
 a{
     color: black;
+    cursor: pointer;
 }
 /* SPOTLIGHT SECTION */
 .business{        
@@ -289,6 +304,7 @@ span.inbox{
 }
 .Reminder a{
     color:brown;
+    cursor: pointer;
     
 }
 
@@ -308,6 +324,7 @@ span.inbox{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     background-color: #582F0E;
+    cursor: pointer;
 }
 .butt1:hover{
     background-color: burlywood;
@@ -324,15 +341,18 @@ span.inbox{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     background-color: #414833;
+    cursor: pointer;
 }
 /* .new-release */
 .new-release h3{
     margin-top: 10px;
     border-bottom: #4a9a34 dotted 2px;
     color: brown;
+    cursor: pointer;
 }
 .new-release .butt2{
     border-bottom: black solid 2px;
+    cursor: pointer;
 }
 p span{
     margin-top: 10px;    
@@ -372,9 +392,11 @@ p span{
 }
 p a{
     color: brown;
+    cursor: pointer;
 }
 .event1 a{
     color: blue;
+    cursor: pointer;
 }
 
 .event1 {
@@ -416,6 +438,7 @@ p a{
 .color-text span{
     font-size: 30px;
     color: red;
+    cursor: pointer;
 }
 .cls{
     display: flex;
@@ -475,4 +498,11 @@ p a{
 .main-image a:hover{
     background-color:burlywood ;
 }
+picture>img{
+    width: 100%;
+}
+picture{
+    width: 100%;
+}
+ 
  

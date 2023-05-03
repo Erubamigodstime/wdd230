@@ -17,11 +17,10 @@
     <div class="banner">            
 
     </div>    
-    <header>
-        
+    <header>        
         <div class="logo-content">
         <div class="logo">
-            <img src="images/Color-logo.png" width="200px" alt="logo image">                        
+            <img src="images/Color-logo.webp" width="200px" alt="logo image">                        
         </div>
         <div class="icons">
             <i class="fa fa-facebook-official" ></i>
@@ -36,8 +35,7 @@
                 <li> <a href="Target-Audience.html">Directory</a></li>
                 <li> <a href="colour-scheme.html">Join</a></li>
                 <li> <a href="Typography.html">Contact</a></li>
-            </ul>
-            
+            </ul>           
         </nav>
 </Header>
 
@@ -84,8 +82,11 @@
 
     </section>
     <section class="main-image">
-        <picture>
-            <img src="images/office2.jpg" alt="main Image" width="100%" height="100%">
+        <picture class="photo-A">
+            <source media="(min-width: 64rem)" srcset="images/new.png">
+            <source media="(min-width: 35rem)" srcset="images/medium500px.jpg">
+            <source media="(min-width: 100px)" srcset="images/small350px.jpg">   
+            <img src="images/large800px.jpg" alt="main Image">
         </picture>
         <h2 class="text" id="img-text">Hero with site name and call to action</h2>
         <h4><a href="#">JOIN+</a></h4>
@@ -111,8 +112,8 @@
                 </p>
                 <a href="#">Apply at ikoyichamber.com</a>
                 <div class="butt">
-                    <button class="butt1"> close</button>
-                    <button class="butt2"> Apply </button>
+                    <button title=" do you wat to close your application" class="butt1"> close</button>
+                    <button title="yu will be directed to an applicatin page " class="butt2"> Apply </button>
 
                 </div>
             </div>
@@ -122,9 +123,9 @@
             <h2 class="text"> Our Patners</h2>
                 <section class="patners">
                     <h3> Max-Migold LTD</h3>
-                    <PIcture>
+                    <figure class="pat-img">
                         <img src="images/Maxmigold-logo.png" alt="maxmigold logo" width="200px" height="100px" >
-                    </PIcture>
+                    </figure>
                     <p> industry: Facility Management</p>
                     <hr>
                     <p> Business Location: Ikoyi</p>
@@ -132,15 +133,15 @@
                     <p>Domain: <a href="https://maxmigold.com/" >https://maxmigold.com/</a></p>
             </section>
             <section class="patners">
-                <h3> PriceWaterhousecooper</h3>
-                <PIcture>
+                <h3 > PriceWaterhousecooper</h3>
+                <figure class="pat-img">
                     <img src="images/pwc-logo.png" alt="PwC logo" width="200px" height="100px" >
-                </PIcture>
+                </figure>
                 <p> industry: Finance</p>
                 <hr>
                 <p> Business Location: Ikoyi</p>
                 <hr>
-                <p>Domain: <a href="https://www.pwc.com/ng/en.html" >https://www.pwc.com/ng/en.html</a></p>
+                <p class="smile">Domain: <a href="https://www.pwc.com/ng/en.html" >https://www.pwc.com/ng/en.html</a></p>
         </section>
         </div>
 
@@ -150,12 +151,11 @@
         <h2 class="text">Weather</h2>
         <span class="spn">🌤️</span>
         <div class="weather-text">
-         <h3>31 &#8451 </h3>
+         <h3 id="windChill"> </h3>
         <h4> Partly cloudly</h4>
-        <hr>
-        <p>Humidity: 6%</p>
-        <p> Percipitation: 8%</p>
-        <p>wind: 20%</p>
+        <hr>        
+        <h3>Wind Speed:<span id="speed"> 2.3</span> km/h </h3>
+        <h3>Wind Chil: <span id="temp" > 0.6215</span>  &#8451 </h3>
         </div>
 
     </section>
@@ -182,7 +182,7 @@
             lending rate to 18 percent in an aggressive push to contain the nations inflationary pressure.
             The CBN governor, Godwin Emefiele, announced this Tuesday after the apex 
             banks Monetary Policy Committee (MPC) meeting that began Monday. 
-            <span class="butt2"> Read More... </span>
+            <span title="you will be directed to a page to read more about the business news" class="butt2"> Read More... </span>
         </p>
          
         <h3>Politics 🗳️</h3>
@@ -190,14 +190,14 @@
             of the Peoples Democratic Party (PDP) after the March 18 election.
             Sani expressed surprise that the PDP won some local government areas
              with bogus figures, announcing readiness to approach the Election Petition Tribunal.
-             <span class="butt2">Read More... </span>
+             <span title="you will be directed to a page to read more about the Politics news" class="butt2">Read More... </span>
         </p>
         
         <h3>Sport ⚽</h3>
         <p>Cristiano Ronaldo, who turned 38 last month, won his 197th cap against Liechtenstein, 
             surpassing Kuwait's Bader Al-Mutawa, as he returned to the Portugal starting line-up
              and captained his country in their Euro 2024 Group J qualifier at the Jose Alvalade Stadium.
-             <span class="butt2">Read More... </span>
+             <span title="you will be directed to a page to read more about the GOAT news" class="butt2">Read More... </span>
         </p>
         
     </div>
@@ -208,7 +208,7 @@
 <footer>
     <div class="table-content">        
             <div class="atn">
-            <img src="images/Color-logo.png" width="200px" alt="logo image">
+            <img src="images/Color-logo.webp" width="200px" alt="logo image">
                 
             </div>
             <div  class="btn" >
@@ -224,11 +224,9 @@
     <hr>
     &copy;  Erubami Godstime, Last Updated <span id="currentdate"></span>
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </footer>
 </body>
 </html>
-
-
-
 
 
