@@ -1,0 +1,99 @@
+@media only screen and (min-width: 35rem){
+    nav button{
+        display: none;
+    }
+    nav ul#navLink{
+        display: flex;
+        justify-content: center;
+        
+    }
+    nav ul li a{ 
+        border: none;
+        border-right: 2px dotted black;
+    }
+    nav ul li:first-child{
+        border-left: 2px dotted black;
+
+    }
+    .main-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 500px 700px 700px 500px 500px;
+        grid-template-areas: " main-image main-image  main-image"
+                                "new-release new-release new-release"
+                                "spotlight spotlight spotlight"
+                                "join join join"
+                                "Event Event Weather";
+        grid-gap: 5px;
+    }
+    .Event{
+        grid-area: Event;
+    }
+    .main-image{
+        grid-area: main-image;
+    }                         
+    .Weather{
+        grid-area: Weather;
+    }
+    .join{
+        grid-area:join ;
+    }
+    .new-release{
+        grid-area: new-release;
+    }
+    .spotlight{
+        grid-area: spotlight;   
+         
+        display: grid;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "spotlight1 spotlight2"
+                             "spotlight1 spotlight2";
+        
+        grid-gap: 5px;
+                             
+        
+        
+    }
+    
+    .spotlight1{
+        border: black solid 1px;
+        grid-area:spotlight1;
+        
+        /* margin: 10px 10px; */
+        
+    
+    }
+    .spotlight2{
+        border: black solid 1px;
+        grid-area: spotlight2;
+        /* margin: 10px 10px; */
+        
+       
+           
+    }
+    .table-content{    
+        display: grid; 
+        grid-template-columns: 1fr;   
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "atn"
+                             "btn" 
+                             "ctn";
+                            
+    }
+    .atn{
+        grid-area: atn;
+    }
+    .btn{
+        grid-area: btn;
+    } 
+    .ctn{
+        grid-area: ctn;
+    }   
+    
+}
+
+
+
+   
