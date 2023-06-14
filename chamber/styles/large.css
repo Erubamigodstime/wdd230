@@ -92,7 +92,90 @@
     } 
     .ctn{
         grid-area: ctn;
-    }  
+    }
+    .discovery{        
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        justify-items: auto;
+        gap: 10px; 
+        margin: 0 auto;
+        width: 100%;
+        z-index: 2;
+        margin-bottom: 25px;
+        background-image: linear-gradient(rgba(3, 9, 21, 0.7),rgba(4, 8, 17, 0.7)) ,url(/chamber/images/Fela.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        padding-bottom: 20px;
+        /* background-image: url(""); */
+        /* background-image: linear-gradient(rgba(4,9,20,0.7),rgba(4,9,20,0.7)) ,url(images/link.webp) */
+
+        
+    } 
+    .chart{
+        width: 400px;
+        height: 400px;
+    } 
+    .chat-table{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .bridge-img{
+        float: left;
+        margin-right: 15px;
+    
+    }
+    
+    .link-bridge, .shrine, .lcc, .theatre, .nike {
+        margin-bottom: 20px;
+    }
+    .shrine{    
+        clear: left;
+        
+    }
+    
+    .shrine-img{
+        float: left;
+        margin-right: 15px;
+    
+    }
+    .lcc{        
+        clear: left;
+        
+    }
+    
+    .lcc-image{
+        float: left;
+        margin-right: 15px;
+    
+    }
+    .theatre{    
+        clear: left;
+        
+    }
+    
+    .theatre-img{
+        float: left;
+        margin-right: 15px;
+    
+    }
+    .nike{
+        clear: left;
+    }
+    
+    .nike-img{
+        float: left;
+        margin-right: 15px;
+    
+    }
+    footer{
+        clear: left;
+    }
+   
+    
     
 
 }

@@ -90,7 +90,44 @@
     } 
     .ctn{
         grid-area: ctn;
+    }
+    .discovery{
+        display: flex;
+        flex-direction: column;
+    }
+    .chart-sect{
+        display: flex;
+        flex-direction: row;
     }   
+    .chat-table{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .scenes{
+        display: flex;
+        flex-direction: column;
+    }
+    .bridge-img{
+        float: none;
+    }
+    .shrine-img{
+        float: none;
+    }
+    .lcc-image{
+        float: none;
+    }
+    .theatre-img{
+        float: none;
+    }
+    .nike-img{
+        float: none;
+    }
+    .scenes img{    
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    } 
     
 }
 
