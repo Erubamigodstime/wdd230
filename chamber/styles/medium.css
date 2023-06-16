@@ -94,6 +94,8 @@
     .discovery{
         display: flex;
         flex-direction: column;
+        /* background-image: linear-gradient(rgba(3, 9, 21, 0.7),rgba(4, 8, 17, 0.7)) ,url(/images/Fela.jpg); */
+
     }
     .chart-sect{
         display: flex;
