@@ -103,7 +103,7 @@
         width: 100%;
         z-index: 2;        
         margin-bottom: 25px;
-        background-image: linear-gradient(rgba(3, 9, 21, 0.7),rgba(4, 8, 17, 0.7)) ,url(/chamber/images/Fela.jpg);
+        background-image: linear-gradient(rgba(3, 9, 21, 0.7),rgba(4, 8, 17, 0.7)) ,url(../images/Fela.jpg);
         background-position: center;
         background-size: cover;
         position: relative;        
