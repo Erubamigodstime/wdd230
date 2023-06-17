@@ -5,6 +5,9 @@
         max-width: 64rem;
         margin:auto;
     }
+    form label.middle{
+        padding: .4rem 0;
+    }
 
 /*----------- BODY --------------*/
 
