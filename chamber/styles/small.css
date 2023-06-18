@@ -615,15 +615,13 @@ h4{
 
 /*--------------- Join Page ------------*/
 
-.Join {
-    padding: 0 2%;
-    min-height: 20rem;
-}
-form fieldset{
+
+
+form fieldset{    
     margin: 2rem 0;
     border: 1px solid #333D29;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 0.6rem;
 }
 form legend{
     color: #333D29;
@@ -649,7 +647,7 @@ form label.top input, form label.top select{
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 20rem;
+    /* max-width: 20rem; */
     background-color: rgba(0, 0,0,0.1);
 
 }
@@ -714,24 +712,25 @@ form input.box:checked + .toggle-label {
 }
 form textarea{
     background-color: #B6AD90;
+    width: 100%;
 }
 .star{
     color: red;
 }
-.join-main{
-    
+.join-main{    
     display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 70%;
+    width: 85%;
     
 }
 
 .join-main .img1{
     border: #936639 6px solid;
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
 }
 .join-main .img1 img{
@@ -743,13 +742,18 @@ form textarea{
 }
 .member{
     margin: 0 auto;
-    width: 70%;
+    width: 85%;
     
 }
 .central{
     margin-top: 10px;
 }
 
+.level{
+    margin-left: 0;
+    background-color: #333D29;
+    padding: 10px;
+}
 
 
 
