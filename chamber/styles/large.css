@@ -172,6 +172,15 @@
     footer{
         clear: left;
     }
+    .join-main{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        background-color: #a4a78b;
+    }
+    .membership-benefits{
+        width: 30rem;
+    }
    
     
     

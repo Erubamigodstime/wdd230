@@ -613,6 +613,143 @@ h4{
     background-color: #333D29;
 }
 
+/*--------------- Join Page ------------*/
+
+.Join {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+form fieldset{
+    margin: 2rem 0;
+    border: 1px solid #333D29;
+    border-radius: 10px;
+    padding: 2rem;
+}
+form legend{
+    color: #333D29;
+    margin: 0 1rem;
+    padding: 0 5rem;
+    font-weight: bold;
+}
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: #333D29;
+    font-size: .9rem;
+    font-weight: bold;
+    
+
+}
+form label.top input, form label.top select{
+    -webkit-appearance:none ;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0,0,0.1);
+
+}
+form label.middle{
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn{
+    border: none;
+    background-color:#936639;
+    color: #fff;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required{
+    border-left: #936639 solid 6px;
+}
+form label.top1 input{
+    border-left: #936639 solid 6px;
+}
+
+form label.top input:required:valid{
+    border-left:green solid 6px;
+}
+.toggle {
+    display:flex;
+    position: relative;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    background-color:#333D29;
+    margin-left: 10px;
+  }
+  
+.toggle-label {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color:#936639 ;
+    border-radius: 50%;
+    transition: left 0.2s;
+  }
+  
+form input.box{
+    visibility: hidden;
+  }
+  
+form input.box:checked + .toggle-label {
+    left: 32px;
+  }
+.remember-me{
+    display: flex;
+    gap: 9.2rem;
+    
+}
+form textarea{
+    background-color: #B6AD90;
+}
+.star{
+    color: red;
+}
+.join-main{
+    
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    
+}
+
+.join-main .img1{
+    border: #936639 6px solid;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.join-main .img1 img{
+    width: 100%;
+    height: 100%;
+}
+.gal{
+    text-align: center;
+}
+.member{
+    margin: 0 auto;
+    width: 70%;
+    
+}
+.central{
+    margin-top: 10px;
+}
+
 
 
 
