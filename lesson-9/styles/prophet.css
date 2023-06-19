@@ -57,7 +57,11 @@ section img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 20px #fff;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
     
+}
+img:hover{
+	scale: 1.1;
 }
 .info{
     background-color: #333D29;
