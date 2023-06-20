@@ -78,3 +78,10 @@ img:hover{
 	text-align: right;
 	/* color: yellow; */
 }
+footer{
+	background-color: #936639;
+	padding: 10px;
+	min-width: 370px;
+	width: 100%;
+	text-align: center;
+}

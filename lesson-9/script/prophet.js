@@ -33,7 +33,7 @@ function displayProphets(prophets){
         length.innerHTML = `<strong class="label"> Length <strong/>:  ${prophet.length} `;
         birthdate.innerHTML = `<strong class="label"> Birthdate <strong/>:  ${prophet.birthdate} `;
         birthplace.innerHTML = `<strong class="label"> Birthplace   <strong/>:  ${prophet.birthplace} `;
-        death.innerHTML = `<strong class="label"> Birthplace  <strong/>:  ${prophet.death} `;
+        death.innerHTML = `<strong class="label"> Death  <strong/>:  ${prophet.death} `;
         children.innerHTML = `<strong class="label"> Children <strong/>:  ${prophet.numofchildren} `;
         image.setAttribute( 'src', prophet.imageurl);
         image.setAttribute( 'alt', `Image of ${prophet.name}  ${prophet.lastname}`);
