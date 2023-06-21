@@ -29,8 +29,8 @@ function displayCompanies(companies){
         let image = document.createElement('img');
 
         name.textContent = `${company.name}`;
-        industry.innerHTML = ` <strong > Industry <strong/> ${company.industry} `;        
-        location.innerHTML = `<strong > Business Location <strong/>:  ${company.location} `;
+        industry.innerHTML = ` <strong > Industry <strong/>:  ${company.industry} `;        
+        location.innerHTML = `<strong > Business Location<strong/>:  ${company.location} `;
         domain.innerHTML = `<strong > Domain  <strong/>:  ${company.domain} `;
         image.setAttribute( 'src', company.imageurl);
         image.setAttribute( 'alt', `image of ${company.name} }`);
