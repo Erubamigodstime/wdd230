@@ -1,5 +1,4 @@
-const directoryUrl = "https://erubamigodstime.github.io/wdd230/chamber/directory.json";
-// const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+const directoryUrl = "https://erubamigodstime.github.io/wdd230/chamber/directory.json"
 
 getcompaniesData(directoryUrl );
 
@@ -30,7 +29,7 @@ function displayCompanies(companies){
 
         name.textContent = `${company.name}`;
         industry.innerHTML = ` <strong > Industry <strong/>:  ${company.industry} `;        
-        location.innerHTML = `<strong > Business Location<strong/>:  ${company.location} `;
+        location.innerHTML = `<strong > Business Location<strong/>: ${company.location} `;
         domain.innerHTML = `<strong > Domain  <strong/>:  ${company.domain} `;
         image.setAttribute( 'src', company.imageurl);
         image.setAttribute( 'alt', `image of ${company.name} }`);
@@ -38,14 +37,14 @@ function displayCompanies(companies){
         image.setAttribute( 'height', '100');
         image.setAttribute( 'loading', 'lazy');
 
+        fig.appendChild(image);
+
         sect.appendChild(name);
         sect.appendChild(fig);
         sect.appendChild(industry);
         sect.appendChild(line);
         sect.appendChild(location);
-        sect.appendChild(domain);
-
-        
+        sect.appendChild(domain);        
         
         mainDiv.appendChild(sect)
 
