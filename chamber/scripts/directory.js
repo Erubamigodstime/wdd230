@@ -13,24 +13,25 @@ async function getcompaniesData(directoryUrl ){
 
 
 function displayCompanies(companies){
-    let mainDiv  = document.querySelector("div.main-directory")
+    let mainDiv  = document.querySelector(".main-directory")
     companies.forEach(company => {
         
         let sect = document.createElement('section');
-        sect.classList.add('patners','main-patners');
+        sect.classList.add('main-patners');
         let fig = document.createElement('figure');
-        fig.classList.add('pat-img','patners-img');
+        fig.classList.add('patners-img');
         let name = document.createElement('h3');    
         let industry = document.createElement('p');
         let line = document.createElement('hr');
+        line.classList.add('line');
         let location = document.createElement('p');
         let domain = document.createElement('p');        
         let image = document.createElement('img');
 
-        name.innerHTML = ` <strong class="name" ><strong/>${company.name}`;
-        industry.innerHTML = ` <strong > Industry <strong/>:  ${company.industry} `;        
-        location.innerHTML = `<strong > Business Location<strong/>: ${company.location} `;
-        domain.innerHTML = `<strong > Domain  <strong/>:  ${company.domain} `;
+        name.innerHTML =    ` ${company.name}`;
+        industry.innerHTML = `${company.industry}`;        
+        location.innerHTML = `${company.location}`;
+        domain.innerHTML = `  ${company.domain}`;
         image.setAttribute( 'src', company.imageurl);
         image.setAttribute( 'alt', `image of ${company.name} }`);
         image.setAttribute( 'width', '250');
@@ -52,3 +53,20 @@ function displayCompanies(companies){
     });
 
 };
+
+const listBtn = document.querySelector('#list-btn');
+const gridBtn = document.querySelector('#grid-btn');
+const main = document.querySelector('.main-directory');
+const display = document.querySelector('article')
+
+gridBtn.addEventListener("click", () => {	
+	display.classList.add("main-directory");
+	display.classList.remove("list");
+});
+
+listBtn.addEventListener("click", showList); 
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("main-directory");
+}

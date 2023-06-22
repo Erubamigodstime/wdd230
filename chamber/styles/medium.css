@@ -141,6 +141,14 @@
         width: 80%;
         
     }
+    .list .main-patners {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;	       
+        padding: 0.25rem;
+    }
+    .list  .main-patners:nth-child(even) {
+        background-color: rgb(85, 92, 90);
+    }
     
 }
 
