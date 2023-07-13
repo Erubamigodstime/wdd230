@@ -44,11 +44,14 @@ main{
     flex-direction: row;
     justify-content: space-around;
 }
-.icons{
+/* .icons{
+   
+} */
+.icons img{
+    width: 30px;
     position: relative;
-    top: 30px;
+    top: 25px;
 }
- 
 
 nav{
     background-color:#936639;
