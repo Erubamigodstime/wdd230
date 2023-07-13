@@ -173,22 +173,21 @@ picture{
 }
 .join{    
     grid-area:join;        
-    /* border: black solid 2px; */
+ 
     
      
 }
 .new-release{
     grid-area: new-release;
     text-align: left;    
-    /* border: black solid 2px;  */
+   
     
 }
 .new-release p, h3{
     margin-left: 10px;
 }
 .spotlight{
-    grid-area:spotlight;    
-    /* border: black solid 2px;     */
+    grid-area:spotlight;  
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows:1fr 1fr;
