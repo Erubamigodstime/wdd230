@@ -33,8 +33,7 @@ function displayResult(weatherData){
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    // weatherIcon.setAttribute( 'width', '100');
-    // weatherIcon.setAttribute( 'height', '100');
+
     const arr = desc.split(" ")
 
     for (var i = 0; i < arr.length; i++) {
@@ -42,12 +41,8 @@ function displayResult(weatherData){
     
     }    
     
-    const descript = arr.join(" ");
-    
-    // arr.forEach(element => {
-    //     element.charAt(0).toUpperCase() + element.slice(0);
-    // });
-    // const descript = arr.join(" ");
+    const descript = arr.join(" ");    
+  
     captiondesc.textContent = descript;
     
 };

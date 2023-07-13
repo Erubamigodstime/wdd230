@@ -866,3 +866,28 @@ form textarea{
     font-size: .8rem;  
     
 }
+.Weather{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#windChill{
+    margin-top: 90px;
+    margin-left: 50px;
+}
+.weatherImg{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.weatherImg img{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+.weather-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
