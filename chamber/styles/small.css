@@ -9,8 +9,8 @@
 }
 
 :root{
-    --background-color: #C2C5AA;
-    --secondary-color: #B6AD90;
+    --background-color: #9b9e86;
+    --secondary-color: #68645a;
     --accent1-color:#333D29;
     --accent2-color:#582F0E;
     --accent3-color:#936639;
@@ -25,7 +25,7 @@ body{
 }
 
 header,main{
-    background-color:  #C2C5AA;
+    background-color:#e3e6cc;
     
     
 }
@@ -145,15 +145,14 @@ picture{
 .Event{
     grid-area: Event;
     text-align: left;   
-    /* border: black solid 2px; */
+    
     
     
     
 }
 .main-image{
     grid-area: main-image;
-    text-align: left;    
-    /* border: black solid 2px; */
+    text-align: left;   
     position: relative; 
 }
 
@@ -167,15 +166,15 @@ picture{
 }
 .Weather{
     grid-area:Weather;
-    text-align: left;    
-    /* border: black solid 2px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
      
 }
 .join{    
-    grid-area:join;        
- 
-    
-     
+    grid-area:join;    
 }
 .new-release{
     grid-area: new-release;
@@ -198,15 +197,13 @@ picture{
     
 }
  
-.spotlight1{
-    /* border: black solid 1px; */
+.spotlight1{   
     grid-area: spotlight1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.spotlight2{
-    /* border: black solid 1px; */
+.spotlight2{   
     grid-area: spotlight2;
     display: flex;
     flex-direction: column;
@@ -342,7 +339,7 @@ span.inbox{
     background-color: #414833;
     cursor: pointer;
 }
-/* .new-release */
+
 .new-release h3{
     margin-top: 10px;
     border-bottom: #4a9a34 dotted 2px;
@@ -356,10 +353,7 @@ span.inbox{
 p span{
     margin-top: 10px;    
     width: fit-content;
-    display: block;
-    /* padding-left: 10px;
-    padding-right: 10px;
-    padding: 9px;     */
+    display: block;    
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -445,17 +439,9 @@ p a{
     justify-content: space-between;
     margin-top: 5px;
 }
-.Weather{
-    text-align: center;
-}
-.Weather .spn{
-    font-size: 200px;
-    /* text-align: center; */
-}
-.weather-text{
-    text-align: left;
-    margin-left: 10px;
-}
+
+
+
 
 /* JOIN */
 
@@ -464,9 +450,7 @@ p a{
 }
 .join-button{
     
-    text-align: center;
-    /* padding-left: 10px;
-    padding-right: 10px; */
+    text-align: center;    
     width: fit-content;
     padding: 9px;  
     border-bottom-left-radius: 10px;
@@ -580,25 +564,11 @@ h2{
     
 }
 
-.imgage-card{
-    padding: 5px;
-    background-color: #936639;
-    
-}
-h4{
-    /* margin-left: 20px; */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px; 
-    padding-left: 2px;
-    background-color: #936639;
-}
+
 .scenes img{    
     min-width: 100%;
     max-width: 100%;
-    width: 100%;
-    /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+    width: 100%;    
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -645,8 +615,7 @@ form label.top input, form label.top select{
     border-radius: 4px;
     padding: .75rem;
     color: #555;
-    width: 100%;
-    /* max-width: 20rem; */
+    width: 100%;    
     background-color: rgba(0, 0,0,0.1);
 
 }
@@ -800,8 +769,7 @@ form textarea{
 
 .patners-img img{
     background-color:whitesmoke;
-    align-items: center;
-    /* margin: 30px  0; */
+    align-items: center;    
     
 
 }
@@ -866,12 +834,7 @@ form textarea{
     font-size: .8rem;  
     
 }
-.Weather{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 
-}
 
 #windChill{
     margin-top: 90px;
@@ -887,7 +850,6 @@ form textarea{
     border-bottom: 2px solid gray;
 }
 .weather-text{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    text-align: left;
+    
 }

@@ -8,10 +8,10 @@
     .main-content{
         display: grid;       
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 0.5fr   1fr;
+        grid-template-rows: 0.5fr 1fr;
         grid-template-areas: "Event main-image spotlight"
                              "Weather main-image spotlight"
-                             "join new-release spotlight";
+                             "join new-release  spotlight";
         grid-gap: 10px;
     }
     figure{      
@@ -46,9 +46,11 @@
     }
     .join{
         grid-area:join ;
+        
     }
     .new-release{
         grid-area: new-release;
+        
     }
     .new-release p, h3{        
         overflow: hidden;
@@ -65,7 +67,7 @@
     .spotlight1, .spotlight2{
         border: black solid 1px;
         margin: 10px;
-        /* justify-items: stretch; */
+        
         
     }
     .spotlight1{
