@@ -105,7 +105,7 @@
         width: 100%;
         z-index: 2;        
         margin-bottom: 25px;
-        background-image: linear-gradient(rgba(3, 9, 21, 0.7),rgba(4, 8, 17, 0.7)) ,url(../images/Fela.jpg);
+        background-image: linear-gradient(rgba(3, 9, 21, 0.7),rgba(4, 8, 17, 0.7)) ,url(../images/Fela.webp);
         background-position: center;
         background-size: cover;
         position: relative;        
@@ -191,7 +191,28 @@
     .list  .main-patners:nth-child(even) {
         background-color: rgb(85, 92, 90);
     }
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+    .nero{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "form  form  blo-gright";
+                             
+        gap: 10px;
+
+    }
+
     
+    .home-form{
+       grid-area: form;
+    }
+    .home{
+        grid-area:blo-gright ;
+    }
    
     
     

@@ -30,8 +30,16 @@ async function getWeather(url){
 
 function windChillFunct(data) {      
     let wChill = 35.74 + data.main.temp - 35.75 * Math.pow(data.wind.speed, 0.16) + 0.4275 * data.main.temp * Math.pow(data.wind.speed, 0.16);
-    wC = Math.round(wChill)
-    windChill .innerHTML = `<span>${wC}<span/>&deg;F`  ;
+    if (data.main.temp < 50 && data.wind.speed > 3.0) {
+        mC = Math.round(wChill)
+        const wC = `<span>${mC}<span/>&deg;F`;        
+    }
+    else{
+        wC = "N/A"
+    }
+    
+
+    windChill .innerHTML = wC;
     temperature.textContent   =  Math.round( data.main.temp);
     windSpeed.textContent       = data.wind.speed;
     const iconsrc    = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
