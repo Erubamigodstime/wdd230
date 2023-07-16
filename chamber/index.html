@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="styles/small.css">
     <link rel="stylesheet" type="text/css" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" href="styles/large.css">
-    <script src="https://kit.fontawesome.com/6fc0e17337.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Playfair+Display&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
    
     <title>Chamber of commerce website </title>
@@ -20,18 +19,18 @@
     <header>        
         <div class="logo-content">
         <div class="logo">
-            <img src="images/Color-logo.webp" width="200px" alt="logo image">                        
+            <img class="logos" src="images/Color-logo.webp"  alt="logo image">                        
         </div>
         <div class="icons">
-            <img src="images/book.webp" alt="facebok-icon">
-            <img src="images/twitter.webp" alt="facebok-icon">
-            <img src="images/gram.webp" alt="facebok-icon">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><img src="images/book.webp" alt="facebok-icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/twitter.webp" alt="facebok-icon"></a>
+            <a href="https://twitter.com/home?lang=en" target="_blank"><img src="images/gram.webp" alt="facebok-icon"></a>
         </div>
         </div>
         <nav>
             <button id="hamburger"><span>&#9776;</span> <span>X</span> </button>                                        
             <ul id="navLink">
-                <li> <a href="chamber.html">Home</a></li>
+                <li> <a href="index.html">Home</a></li>
                 <li> <a href="discovery.html" class="active">Discovery</a></li>
                 <li> <a href="directory.html">Directory</a></li>
                 <li> <a href="join.html">Join</a></li>
@@ -77,10 +76,8 @@
                 <div class="color1"> </div>
                 <div class="color2"></div>
                 <div class="color1"></div>
-            </div>       
-
-        
-
+            </div>  
+        </div>
     </section>
     <section class="main-image">
         <picture class="photo-A">
@@ -90,7 +87,7 @@
             <img src="images/large800px.webp" alt="main Image">
         </picture>
         <h2 class="text" id="img-text">Hero with site name and call to action</h2>
-        <h4><a href="#">JOIN+</a></h4>
+        <h4><a href="join.html">JOIN+</a></h4>
 
     </section>
     <section class="spotlight">
@@ -101,7 +98,7 @@
                 <hr class="line-1">
                 <p> Contact Ikoyi Chamber to connect with our business community 
                     and start the prcess of making The ilustrious city of <br> VI your home</p>
-                    <span class="inbox">&#9993</span>
+                    <span class="inbox">&#9993;</span>
 
             </div>
             <div class="Reminder">
@@ -125,23 +122,23 @@
                 <section class="patners">
                     <h3> Max-Migold LTD</h3>
                     <figure class="pat-img">
-                        <img src="images/Maxmigold-logo.webp" alt="maxmigold logo" width="200px" height="100px" >
+                        <img class="imgtest" src="images/Maxmigold-logo.webp" alt="maxmigold logo">
                     </figure>
                     <p> industry: Facility Management</p>
-                    <hr>
+                    <hr class="lines">
                     <p> Business Location: Ikoyi</p>
-                    <hr>
+                    <hr class="lines">
                     <p>Domain: <a href="https://maxmigold.com/" >https://maxmigold.com/</a></p>
             </section>
             <section class="patners">
                 <h3 > PriceWaterhousecooper</h3>
                 <figure class="pat-img">
-                    <img src="images/pwc.webp" alt="PwC logo" width="200px" height="100px" >
+                    <img class="imgtest" src="images/pwc.webp" alt="PwC logo"  >
                 </figure>
                 <p> industry: Finance</p>
-                <hr>
+                <hr class="lines" >
                 <p> Business Location: Ikoyi</p>
-                <hr>
+                <hr class="lines">
                 <p class="smile">Domain: <a href="https://www.pwc.com/ng/en.html" >https://www.pwc.com/ng/en.html</a></p>
         </section>
         </div>
@@ -158,7 +155,7 @@
             <h4 id="descript"> </h4>
             <hr>        
             <h3>Wind Speed:<span id="speed"></span> m/h </h3>
-            <h3>Temperature: <span id="temp" ></span>  &#8451 </h3>
+            <h3>Temperature: <span id="temp" ></span>  &#8451; </h3>
             </div>
     </section>
 
@@ -174,7 +171,7 @@
                 and providing business support services. <br>
                 join our of business professionals today by clicking on the button below </p>
                 <div class="new-div">
-                 <p class="join-button">JOIN+</p>
+                 <p class="join-button"><a href="join.html">JOIN</a>+</p>
                 </div>
 
     </section>
@@ -212,7 +209,7 @@
 <footer>
     <div class="table-content">        
             <div class="atn">
-            <img src="images/Color-logo.webp" width="200px" alt="logo image">
+            <img class="logos" src="images/Color-logo.webp" alt="logo image">
                 
             </div>
             <div  class="btn" >
@@ -226,8 +223,9 @@
             </div>      
     </div>
     <hr>
-    &copy;  Erubami Godstime, Last Updated <span id="currentdate"></span>
-    <p>Weather provided by <link href="openweathermap.org"> openweathermap.org</p>
+    &copy;Erubami Godstime, Last Updated <span id="currentdate"></span>
+    <p class="openweather">Weather provided by <a href="openweathermap.org" target="_blank" rel="noopener noreferrer">openweathermap.org</a></p>
+    <!-- <p>Weather provided by <link href="openweathermap.org"> openweathermap.org</p> -->
     <script src="scripts/script.js"></script>
     <script src="scripts/windchill.js"></script>
 </footer>
