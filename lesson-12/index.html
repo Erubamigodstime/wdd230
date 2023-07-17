@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountifull Page</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/slider1.js" defer></script>
+    <script src="scripts/slider2.js" defer></script>
+
+</head>
+<body>
+    <Header>
+        <nav>
+            <button id="hamburger"><span>&#9776;</span><span>X</span> </button>                                        
+            <ul id="navLink">
+                <li> <a class="active" href="index.html">HOME</a></li>
+                <li> <a href="fresh.html" class="active">FRESH</a></li>
+                <li> <a href="about.html">ABOUT US</a></li>                
+            </ul> 
+        </nav>
+        <div class="logo">
+            <img class="logo-img"   src="images/multiclor-logo-removebg-preview.png" alt="logo Image">
+            <p> <strong>BOUNTIFUL FOODS</strong>
+                23, Carlsbald, California, USA. Tel: +1 00000220 email: info@bountifulfoods.com</p>
+        </div>
+                  
+       
+        <div class="icons">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><img src="images/book.webp" alt="facebok-icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/twitter.webp" alt="facebok-icon"></a>
+            <a href="https://twitter.com/home?lang=en" target="_blank"><img src="images/gram.webp" alt="facebok-icon"></a>
+        </div>
+    </Header>
+    <main>
+        <div class="slider-container">
+            <div class="images">
+                <img id="sl" src="images/fruit1.jpg" alt=" fruit image">
+                <img id="sl" src="images/fruit2.jpg" alt=" fruit image">
+                <img id="sl" src="images/fruit3.jpg" alt=" fruit image">
+                <img id="sl" src="images/fruit4.jpg" alt=" fruit image">
+                <img id="sl" src="images/fruit5.jpg" alt=" fruit image">
+                <img id="sl" src="images/fruit6.jpg" alt=" fruit image">
+            </div>
+        </div>
+        <div class="special">
+            <h2> My Special</h2>
+            <p> you have created <span id="total"> </span></p>
+            <div class="special-cont">
+                <div class="image-special">
+                    <img id="bl" src="images/fruit-drink0.jpg" alt=" fruit image">
+                    <img id="bl" src="images/fruit-drink1.webp" alt=" fruit image">
+                    <img id="bl" src="images/fruit-drink2.jpg" alt=" fruit image">
+                    <img id="bl" src="images/fruit-drink3.jpg" alt=" fruit image">
+                    <img id="bl" src="images/fruit-drink4.jpg" alt=" fruit image">
+                    <img id="bl" src="images/fruit-drink5.jpg" alt=" fruit image">
+                </div>
+            </div>
+            <h3> Ready To Drink</h3>
+            <form action="">
+                <fieldset>
+                    <legend>Select the ingrident for your drink</legend>
+                    <label class="middle"> Apple Juice<input type="checkbox" name="apple" value="Apple Juice"></label>
+                    <label class="middle">Orange Juice<input type="checkbox" name="orange" value="Orange"> </label>
+                    <label class="middle">Lemon Juice<input type="checkbox" name="lemon" value="Lemon"> </label>
+                    <label class="middle">Mango Juice<input type="checkbox" name="mango" value="Mango"> </label>
+                    <label class="middle">Grape Juice<input type="checkbox" name="grape" value="Grape"> </label> 
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Place Your Order">
+
+            </form>
+
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text"></p>
+    </footer>
+</body>
+</html>

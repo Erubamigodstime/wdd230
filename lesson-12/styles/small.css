@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header, main{
+    margin: 0 auto;
+    width: 90%;
+}
+
+nav {
+    background-color: black;    
+    
+    
+}
+nav button{
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+}
+nav ul{
+    list-style-type: none;    
+    padding: 0;
+    display: none;
+    
+    
+}
+nav ul.click{
+    display: block;
+    
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    
+}
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+#hamburger span:nth-child(1){
+    display: block;
+}
+#hamburger span:nth-child(2){
+    display:none;
+}
+
+#hamburger.click span:nth-child(1){
+    display: none;
+}
+#hamburger.click span:nth-child(2){
+    display:block;
+}
+.logo-img{
+    width: 80px;
+    
+}
+.logo{
+    /* padding-bottom: 20px; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: #CAF0F8;
+}
+
+
+.icons{
+    background-color: #48CAE4;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+
+}
+.icons a img{
+    width: 30px;
+}
+
+.slider-container{
+    height: 600px;
+    overflow: hidden;
+}
+.images{
+    width: 100%;
+    height: 100%;
+}
+.images img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.special{
+    background-color: #023E8A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+ .special-cont{
+    width: 250px;
+    height:250px ;
+    overflow: hidden;
+}
+.image-special{
+    width: 100%;
+    height: 100%;
+}
+.image-special img{
+    height: 100%;
+    width: 100%;
+    
+} 
+.special h2,h3{
+    background-color:#CAF0F8;
+    padding: 9px;
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.special p{
+    color: #CAF0F8;
+    margin-bottom: 5px;
+}
+/* form .submit{
+    
+} */
+
+.middle, legend{
+    color:#CAF0F8;
+    font-size: 1.1rem;
+}
+legend{
+    margin-bottom: 14px;
+}
+fieldset{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+footer{
+    font-size: 1.0rem;
+    padding: 30px;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    color:#CAF0F8;
+    
+}
