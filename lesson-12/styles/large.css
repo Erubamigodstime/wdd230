@@ -97,6 +97,39 @@
     .special h2{       
         width: 500px;       
     }
+    .modal{   
+        width: 500px;
+        height: 500px;
+        background-color: #48CAE4;
+        border-radius: 5px;
+        box-shadow: 0 0 20px black;
+        padding: 5px;
+        position: absolute;
+        visibility: hidden;
+        top: 350px;
+        left: 30%;
+        right: 2%
+    
+    }
+    .head{
+        text-align: center;
+        border-radius: 10px;
+        width: 300px;
+        padding: 9px;
+        position: relative;
+        left: 20%;
+        top: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: #999;
+    }
+    .fruit-details{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     
    
 }
