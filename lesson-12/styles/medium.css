@@ -13,9 +13,12 @@
         border: none; 
 
     }
-    .main-item{
-        width: 90%;
+    header, main{
         margin: 0 auto;
+        width: 90%;
+    }
+    .main-item{
+        width: 100%;       
         display: flex;
         flex-direction: column;
         gap: 20px;  

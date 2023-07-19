@@ -6,6 +6,10 @@
         
         
     }
+    header, main{
+        margin: 0 auto;
+        width: 90%;
+    }
     form{
         width: 700px;
     }
