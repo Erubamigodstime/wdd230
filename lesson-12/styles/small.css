@@ -352,8 +352,8 @@ section:nth-child(1){
 }
 
 .modal{   
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     background-color: #48CAE4;
     border-radius: 5px;
     box-shadow: 0 0 20px black;
@@ -366,7 +366,7 @@ section:nth-child(1){
 
 }
 .modal p{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 .showModal{
     visibility: visible;
