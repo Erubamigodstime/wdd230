@@ -13,6 +13,10 @@
     form{
         width: 700px;
     }
+    form fieldset{    
+        
+        padding: 2rem;
+    }
     .sect{
         display: flex;
         flex-direction: row;
@@ -21,6 +25,7 @@
     }
     select{
         font-size: 1.1rem;
+       
     }
     .main-item{
         width: 100%;        
