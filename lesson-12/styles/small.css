@@ -63,8 +63,7 @@ nav ul li a:hover{
     width: 80px;
     
 }
-.logo{
-    /* padding-bottom: 20px; */
+.logo{    
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -127,7 +126,7 @@ nav ul li a:hover{
 .special h2{
     background-color:#CAF0F8;
     padding: 9px;
-    width: 500px;
+    width: 300px;
     text-align: center;
     margin-top: 10px;
     border-top-left-radius: 10px;
@@ -138,7 +137,7 @@ nav ul li a:hover{
 .special h3{
     background-color:#CAF0F8;
     padding: 9px;
-    width: 500px;
+    width: 300px;
     text-align: center;
     margin-top: 10px;
     border-top-left-radius: 10px;
@@ -316,7 +315,7 @@ select{
     background-color: #48CAE4;
 }
 section{
-    width: 350px;
+    width: 300px;
     background-color: #CAF0F8;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px; 
@@ -356,8 +355,7 @@ section:nth-child(1){
     text-decoration: none;
 }
 
-.modal{
-    /* text-align: center; */
+.modal{   
     width: 500px;
     height: 500px;
     background-color: #48CAE4;
@@ -381,7 +379,7 @@ section:nth-child(1){
     visibility: hidden;
 }
 .buton{
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
     background-color:#999;
@@ -391,6 +389,10 @@ section:nth-child(1){
     left: 40%;
 }
 .head{
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    padding: 9px;
     position: relative;
     left: 20%;
     top: 10px;
@@ -411,14 +413,14 @@ section:nth-child(1){
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    width: 730px;
+    width: 100%;
     background-color: #48CAE4;
     text-align: center;
 }
 .weather h2{
     background-color:#CAF0F8;
     padding: 9px;
-    width: 500px;
+    width: 300px;
     text-align: center;
     margin-top: 10px;
     border-top-left-radius: 10px;
@@ -429,13 +431,18 @@ section:nth-child(1){
 .weather h3{
     background-color:#CAF0F8;
     padding: 9px;
-    width: 500px;
+    width: 300px;
     text-align: center;
     margin-top: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+.middle-content{    
+    box-shadow: 0 0 20px black;
+    margin-bottom: 10px;
+
 }
 .weather p{
     font-size: 1.2rem;
@@ -497,11 +504,16 @@ section:nth-child(1){
     font-size: 1.1rem;
     background-color: #03045E;
     padding: 9px;
-    width: 500px;
+    width: 300px;
     text-align: center;
     margin-top: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.middle-content .index-form{
+    background-color: none;
+    width: 100%;
 }

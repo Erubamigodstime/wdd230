@@ -18,13 +18,43 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        
-        
+        gap: 20px;  
     
+    }
+    .main-cont{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .weather{
+        width: 100%;
+    }
+    .weather h2{        
+        width: 500px;
+                
+    }
+    .weather h3{       
+        width: 500px;
+        
+    }
+    .special h3{       
+        width: 500px;       
+    }
+    .special h2{       
+        width: 500px;       
+    }
+    .disc{        
+        width: 500px;
+        
     }
     form{
         width: 700px
+    }
+    .middle-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
     .fresh-article{
         width: 100%;
@@ -54,6 +84,43 @@
     section{          
         width: 300px;
         margin-bottom: 30px;
+    }    
+    .about{        
+        width: fit-content;       
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        grid-template-areas: " one  one"
+                             " two   three ";
+        row-gap: 10px;
+    }
+    
+    .one{
+        grid-area: one;
+        width: 100%;
+        width: fit-content;
+        
+    }
+    
+    .two{
+        grid-area: two;
+        margin-right: 10px;
+        width: fit-content;
+       
+    }
+    .three{
+        grid-area: three;
+        width: fit-content;
+       
+    }
+    .one h2{
+        margin-left: 30%;
+    }
+    .two h2{
+        margin-left: 15px;
+    }
+    .three h2{
+        margin-left: 15px;
     }
 
 
