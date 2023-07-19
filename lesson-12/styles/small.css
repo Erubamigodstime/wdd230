@@ -361,7 +361,7 @@ section:nth-child(1){
     position: absolute;
     visibility: hidden;
     top: 350px;
-    left: 30%;
+    left: 10%;
     right: 2%
 
 }
@@ -375,14 +375,15 @@ section:nth-child(1){
     visibility: hidden;
 }
 .buton{
-    padding: 10px;
+    padding: 7px;
     text-align: center;
     border-radius: 10px;
     background-color:#999;
     margin-top: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     position: relative;
     left: 40%;
+    top: -20px;
 }
 .head{
     text-align: center;
