@@ -168,7 +168,7 @@ footer{
     background-color: black;
     text-align: center;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     color:#CAF0F8;
     
 }
@@ -325,7 +325,7 @@ section:nth-child(1){
     margin-top: 20px;
 }
 .article-section{    
-    margin-left: 15px;
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -352,17 +352,17 @@ section:nth-child(1){
 }
 
 .modal{   
-    width: 90vw;
-    height: 90vh;
+    width: 500px;
+    height: 500px;
     background-color: #48CAE4;
     border-radius: 5px;
     box-shadow: 0 0 20px black;
     padding: 5px;
     position: absolute;
     visibility: hidden;
-    /* top: 350px;
+    top: 350px;
     left: 30%;
-    right: 2% */
+    right: 2%
 
 }
 .modal p{
@@ -390,7 +390,7 @@ section:nth-child(1){
     width: 200px;
     padding: 9px;
     position: relative;
-    left: 10%;
+    left: 20%;
     top: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -398,7 +398,7 @@ section:nth-child(1){
 }
 .fruit-details{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;

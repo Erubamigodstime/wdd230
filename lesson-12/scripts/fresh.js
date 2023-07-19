@@ -54,7 +54,6 @@ function reset() {
     
 }
 modal();
-let counter = 0
 
 function modal(datas){
     const total = document.querySelector('#total');
@@ -208,15 +207,7 @@ function modal(datas){
 
         
     }
-    counter++
-    if (counter <= 0 ) {
-    total.textContent =0;
-        
-    }
-    else{
-        total.textContent = counter;
-    }
-
+  
     
 
       
