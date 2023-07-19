@@ -10,6 +10,8 @@
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/slider1.js" defer></script>
     <script src="scripts/slider2.js" defer></script>
+    <script src="scripts/slider3.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
 </head>
 <body>
@@ -46,34 +48,60 @@
                 <img id="sl" src="images/fruit6.jpg" alt=" fruit image">
             </div>
         </div>
-        <div class="special">
-            <h2> My Special</h2>
-            <p> you have created <span id="total"> </span></p>
-            <div class="special-cont">
-                <div class="image-special">
-                    <img id="bl" src="images/fruit-drink0.jpg" alt=" fruit image">
-                    <img id="bl" src="images/fruit-drink1.webp" alt=" fruit image">
-                    <img id="bl" src="images/fruit-drink2.jpg" alt=" fruit image">
-                    <img id="bl" src="images/fruit-drink3.jpg" alt=" fruit image">
-                    <img id="bl" src="images/fruit-drink4.jpg" alt=" fruit image">
-                    <img id="bl" src="images/fruit-drink5.jpg" alt=" fruit image">
+        <div class="middle-content">
+            <div class="special">
+                <h2> My Special</h2>
+                <p> you have created<span id="total"> </span> special Drink</p>
+                <div class="special-cont">
+                    <div class="image-special">
+                        <img id="bl" src="images/fruit-drink0.jpg" alt=" fruit image">
+                        <img id="bl" src="images/fruit-drink1.webp" alt=" fruit image">
+                        <img id="bl" src="images/fruit-drink2.jpg" alt=" fruit image">
+                        <img id="bl" src="images/fruit-drink3.jpg" alt=" fruit image">
+                        <img id="bl" src="images/fruit-drink4.jpg" alt=" fruit image">
+                        <img id="bl" src="images/fruit-drink5.jpg" alt=" fruit image">
+                    </div>
                 </div>
+                <h3> Ready To Drink</h3>
+                <form action="">
+                    <fieldset>
+                        <legend>Select the ingrident for your drink</legend>
+                        <label class="middle"> Apple Juice<input type="checkbox" name="apple" value="Apple Juice"></label>
+                        <label class="middle">Orange Juice<input type="checkbox" name="orange" value="Orange"> </label>
+                        <label class="middle">Lemon Juice<input type="checkbox" name="lemon" value="Lemon"> </label>
+                        <label class="middle">Mango Juice<input type="checkbox" name="mango" value="Mango"> </label>
+                        <label class="middle">Grape Juice<input type="checkbox" name="grape" value="Grape"> </label> 
+                    </fieldset>
+                    <input class="submitBtn" type="submit" value="Place Your Order">
+                    <a href="fresh.html"></a>
+                </form>
             </div>
-            <h3> Ready To Drink</h3>
-            <form action="">
-                <fieldset>
-                    <legend>Select the ingrident for your drink</legend>
-                    <label class="middle"> Apple Juice<input type="checkbox" name="apple" value="Apple Juice"></label>
-                    <label class="middle">Orange Juice<input type="checkbox" name="orange" value="Orange"> </label>
-                    <label class="middle">Lemon Juice<input type="checkbox" name="lemon" value="Lemon"> </label>
-                    <label class="middle">Mango Juice<input type="checkbox" name="mango" value="Mango"> </label>
-                    <label class="middle">Grape Juice<input type="checkbox" name="grape" value="Grape"> </label> 
-                </fieldset>
-                <input class="submitBtn" type="submit" value="Place Your Order">
-
-            </form>
+            <div class="weather">
+                <h2>Weather Forecast</h2>
+                    <div class="weather1">
+                        <div><img src="" alt="" id="weather-icon"></div>
+                        <div>
+                            <p> <span id="temperature"></span>&#176;F</p>
+                            <p id="condition"></p>
+                            <span>Wind speed: <span id="wind-speed"></span>mph<br>Wind Chill:<span id="result"></span>&#176;F<br>Humidity: <span id="humidity"></span>&#176;F</span>
+                        </div>
+                    </div>
+                    <h3>Temperature for the next three days in &#176; F</h3>
+                    <div class="weather2">
+                    </div>
+                    <h4 class="disc"> Discover  Carlsbad</h4>
+                    <div class="slider3">
+                        <div class="discover">
+                            <img id="dl" src="images/encinitas.webp" alt=" fruit image">
+                            <img id="dl" src="images/ventura.webp" alt=" fruit image">
+                            <img id="dl" src="images/long-beach.webp" alt=" fruit image">                        
+                        </div>
+                    </div>
+                </div>              
 
         </div>
+       
+        
     </main>
     <footer>
         <p class="footer-text"></p>

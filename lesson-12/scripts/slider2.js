@@ -14,4 +14,3 @@ function slider2() {
 }
 
 slider2();
-console.log("slider2")

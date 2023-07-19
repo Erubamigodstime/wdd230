@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bountifull Page</title>
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet"  type="text/css"  href="styles/small.css">
+    <link rel="stylesheet"  type="text/css"  href="styles/medium.css">
+    <link rel="stylesheet"  type="text/css"  href="styles/large.css">   
     <script src="scripts/scripts.js" defer></script>   
     <script src="scripts/fresh.js" defer></script>
 
@@ -36,12 +36,13 @@
         </div>
     </Header>
     <main>
-       <form action="">
+        <div class="main-item">       
+       <form>
         <fieldset>
             <legend>Personal Information</legend>
-            <label class="top">First Name<span class="star">*</span> <input type="text"  name="fname" required></label>
-            <label class="top">Email <span class="star">*</span> <input type="email"  name="email" required  placeholder="someone@gmail.com"></label>
-            <label class="top">phone <input type="tel"  name="phone" required  placeholder="123455553321"></label>
+            <label class="top" >First Name<span class="star">*</span> <input type="text"  id="name"name="fname" required></label>
+            <label class="top" >Email<span class="star">*</span> <input type="email"  id="email" name="email" required  placeholder="someone@gmail.com"></label>
+            <label class="top" >Phone<span class="star">*</span> <input type="tel"  name="phone" id="phone"required  placeholder="123455553321"></label>
             <div class="remember-me">
             <label for="remember">Remember Me:</label>
             <div class="toggle">
@@ -51,20 +52,63 @@
             </div>                
         </fieldset>
         <fieldset>
-            <legend>Create Your Special Drink</legend>             
+            <legend>Create Your Special Drink</legend>
+            <div class="sect">
                 <select name="fruit1" id="fruit1" >                    
                 </select>
-                <select name="fruit2"  id="fruit1">                    
+                <select name="fruit2"  id="fruit2">                    
                 </select>
-                <select name="fruit3" id="fruit1" >                    
-                </select>     
+                <select name="fruit3" id="fruit3" >                    
+                </select> 
+            </div>             
+                    
         </fieldset>
-        <fieldset>            
-            <textarea id="message" name="message" rows="4" cols="38"></textarea> 
+        <fieldset>   
+            <legend>Please Leave a Note</legend>
+            <textarea id="note" name="message" rows="4" cols="38"></textarea> 
             <input type="hidden" id="date" name="date"> 
         </fieldset>
-        <input class="submitBtn" type="submit" value="Create My Juice">
+        <input class="submitBtn" id="submitBtn" type="submit" value="Create My Juice">
        </form>
+       <div class="fresh-article">
+        <article class="article-section">
+          <section class="sect1">
+            <div class="section-img">
+                <img src="images/strawberry.jpg" alt="strawberries" >
+            </div>
+            <p class="section-text">
+                 <Strong>Health Benefit of strawberry:</Strong><br>Strawberries offer a range of health benefits due to their rich nutrient content. They are high in vitamins and minerals like vitamin C, manganese, folate, and potassium. <br><a href="">continue reading.......</a>
+            </p>
+          </section>
+          <section class="sect2">
+            <div class="section-img">
+                <img src="images/fruit-measurement.jpg" alt=" fruit measurement">
+            </div>
+            <p class="section-text">
+                <strong>Importance of Fruit Measurement:</strong><br>Fruit measurement is crucial for providing accurate nutritional information, supporting dietary guidelines, enabling portion control, and facilitating health research. .<br><a href="">continue reading.......</a>
+            </p>
+          </section>
+          <section class="sect3">
+            <div class="section-img">
+                <img src="images/fresh1.jpg" alt="fresh fruit">
+            </div>
+            <p class="section-text">
+                <strong>Importance of Fresh Fruit:</strong><br>Fresh fruit from the tree is highly important for several reasons. It offers superior nutrition, taste, and flavor due to its peak ripeness. Consuming locally grown fruit reduces exposure to harmful chemicals and supports sustainable agriculture, reducing the carbon footprint. <br><a href="">continue reading.......</a>
+            </p>
+          </section>
+          <section class="sect4">
+            <div class="section-img">
+                <img src="images/fruit-packaging.jpg" alt="fresh fruit">
+            </div>
+            <p class="section-text">
+                <strong>Importance of Fresh Fruit:</strong><br>Fresh fruit from the tree is highly important for several reasons. It offers superior nutrition, taste, and flavor due to its peak ripeness. Consuming locally grown fruit reduces exposure to harmful chemicals and supports sustainable agriculture, reducing the carbon footprint. <br><a href="">continue reading.......</a>
+            </p>
+          </section>
+        </article>
+       </div>
+    </div>
+    <div class="modal">     
+    </div>   
     </main>
     <footer>
         <p class="footer-text"></p>

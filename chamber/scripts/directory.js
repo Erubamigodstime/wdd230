@@ -6,9 +6,10 @@ async function getcompaniesData(directoryUrl ){
     const result  = await fetch(directoryUrl )
     const data = await result.json();
     displayCompanies(data.companies);
+   
     
    
-};
+}
 
 
 
